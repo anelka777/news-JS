@@ -1,8 +1,14 @@
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr));
+    gap: 24px;
+    margin-top: 16px;
+}
+
 .news__item {
     display: flex;
     flex-direction: column;
-    margin: 1rem auto;
-    margin-bottom: 1.6%;
+    margin: 0;
     background: #fff;
     color: #333;
     line-height: 1.4;
@@ -57,6 +63,7 @@
     background: #fff;
     position: relative;
     z-index: 1;
+    overflow-wrap: anywhere;
 }
 
 .news__item .news__description h2 {
